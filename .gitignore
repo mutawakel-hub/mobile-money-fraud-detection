@@ -1,0 +1,18 @@
+# البيانات الكبيرة — تُحمَّل من المصدر (انظر data/README.md)
+data/*.csv
+data/*.csv.gz
+
+# بايثون
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# بيئات العمل
+.venv/
+venv/
+env/
+
+# ملفات الأنظمة
+.DS_Store
+Thumbs.db

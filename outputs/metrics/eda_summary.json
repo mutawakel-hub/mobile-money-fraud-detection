@@ -1,0 +1,102 @@
+{
+  "n_rows": 1720181,
+  "n_cols": 10,
+  "columns": [
+    "step",
+    "transactionType",
+    "amount",
+    "initiator",
+    "oldBalInitiator",
+    "newBalInitiator",
+    "recipient",
+    "oldBalRecipient",
+    "newBalRecipient",
+    "isFraud"
+  ],
+  "missing_total": 0,
+  "duplicates": 0,
+  "n_legal": 1544663,
+  "n_fraud": 175518,
+  "fraud_rate_pct": 10.2,
+  "fraud_by_type": {
+    "PAYMENT": {
+      "total": 667245,
+      "fraud": 0,
+      "rate_pct": 0.0
+    },
+    "TRANSFER": {
+      "total": 569328,
+      "fraud": 175518,
+      "rate_pct": 30.83
+    },
+    "DEPOSIT": {
+      "total": 384431,
+      "fraud": 0,
+      "rate_pct": 0.0
+    },
+    "WITHDRAWAL": {
+      "total": 93785,
+      "fraud": 0,
+      "rate_pct": 0.0
+    },
+    "DEBIT": {
+      "total": 5392,
+      "fraud": 0,
+      "rate_pct": 0.0
+    }
+  },
+  "merchant_analysis": {
+    "personal": {
+      "total": 569328,
+      "fraud": 175518,
+      "rate_pct": 30.83
+    },
+    "merchant": {
+      "total": 1150853,
+      "fraud": 0,
+      "rate_pct": 0.0
+    }
+  },
+  "amount_stats": {
+    "fraud": {
+      "count": 175518.0,
+      "mean": 25486.86,
+      "std": 17980.36,
+      "min": 16804.02,
+      "25%": 17084.69,
+      "50%": 19631.62,
+      "75%": 24615.56,
+      "max": 632938.42
+    },
+    "legal": {
+      "count": 1544663.0,
+      "mean": 55612.54,
+      "std": 92545.22,
+      "min": 0.24,
+      "25%": 599.78,
+      "50%": 17062.9,
+      "75%": 78638.27,
+      "max": 2142928.28
+    }
+  },
+  "negative_balances": {
+    "initiator": 44621,
+    "recipient": 15,
+    "min_balance": -199997.11
+  },
+  "correlation_with_fraud": {
+    "step": 0.0441,
+    "amount": -0.1032,
+    "oldBalInitiator": -0.0467,
+    "newBalInitiator": -0.0556,
+    "oldBalRecipient": -0.069,
+    "newBalRecipient": -0.0515
+  },
+  "drain_ratio_mean": {
+    "fraud": 1.569,
+    "legal": 58.663
+  },
+  "step_max": 143,
+  "fraud_rate_by_time_mean": 12.45,
+  "fraud_rate_by_time_std": 4.35
+}

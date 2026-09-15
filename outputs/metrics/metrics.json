@@ -1,0 +1,124 @@
+{
+  "dumb_all_legal": {
+    "accuracy": 0.898,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "confusion_matrix": [
+      [
+        308933,
+        0
+      ],
+      [
+        35104,
+        0
+      ]
+    ],
+    "note": "يتنبأ بأن كل معاملة شرعية"
+  },
+  "rule_every_transfer": {
+    "accuracy": 0.7707,
+    "precision": 0.3079,
+    "recall": 1.0,
+    "f1": 0.4709,
+    "confusion_matrix": [
+      [
+        230039,
+        78894
+      ],
+      [
+        0,
+        35104
+      ]
+    ],
+    "note": "كل عملية تحويل تُصنَّف احتيالاً"
+  },
+  "logistic_regression_full": {
+    "accuracy": 0.7807,
+    "precision": 0.3175,
+    "recall": 0.9995,
+    "f1": 0.4819,
+    "confusion_matrix": [
+      [
+        233499,
+        75434
+      ],
+      [
+        16,
+        35088
+      ]
+    ],
+    "roc_auc": 0.889,
+    "train_seconds": 3.9,
+    "train_rows": 1376144
+  },
+  "logistic_regression_sample": {
+    "accuracy": 0.7787,
+    "precision": 0.3155,
+    "recall": 0.9997,
+    "f1": 0.4797,
+    "confusion_matrix": [
+      [
+        20301,
+        6638
+      ],
+      [
+        1,
+        3060
+      ]
+    ],
+    "roc_auc": 0.886,
+    "train_rows": 120000
+  },
+  "knn_sample": {
+    "accuracy": 0.8573,
+    "precision": 0.1777,
+    "recall": 0.1098,
+    "f1": 0.1357,
+    "confusion_matrix": [
+      [
+        25384,
+        1555
+      ],
+      [
+        2725,
+        336
+      ]
+    ],
+    "roc_auc": 0.5803,
+    "k": 3,
+    "train_rows": 120000,
+    "fit_seconds": 0.0,
+    "predict_seconds": 6.3,
+    "k_validation_f1": {
+      "3": 0.1548,
+      "7": 0.1168,
+      "15": 0.1014
+    }
+  },
+  "_meta": {
+    "test_rows_full": 344037,
+    "test_rows_sample": 30000,
+    "knn_sample_size": 150000,
+    "knn_best_k": 3,
+    "random_state": 42,
+    "features": [
+      "step",
+      "log_amount",
+      "log_oldBalInitiator",
+      "log_newBalInitiator",
+      "log_oldBalRecipient",
+      "log_newBalRecipient",
+      "is_transfer",
+      "is_payment",
+      "is_deposit",
+      "is_withdrawal",
+      "is_debit",
+      "amount_minus_oldBal",
+      "relative_gap",
+      "dest_credit_error",
+      "flag_negBalInitiator",
+      "flag_negBalRecipient"
+    ]
+  }
+}
