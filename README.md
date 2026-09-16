@@ -165,6 +165,20 @@
 
 ## 🚀 التشغيل
 
+### الطريقة الأسهل: دفتر Jupyter (موصى به)
+
+```bash
+# 1) تثبيت المتطلبات
+pip install -r requirements.txt jupyter
+
+# 2) تحميل البيانات إلى مجلد data/ (انظر data/README.md)
+
+# 3) فتح الدفتر وتنفيذ كل الخلايا (خلايا النتائج والرسوم العشرة منفّذة ومحفوظة فيه أصلاً)
+jupyter notebook mobile_money_fraud_detection.ipynb
+```
+
+### أو تشغيل خط الإنتاج كسكربتات
+
 ```bash
 # 1) تثبيت المتطلبات
 pip install -r requirements.txt
@@ -187,6 +201,7 @@ python src/04_signal_analysis.py # تحليل سقف الأداء
 ```
 mobile-money-fraud-detection/
 ├── README.md                  ← هذا الملف
+├── mobile_money_fraud_detection.ipynb ← دفتر Jupyter: المشروع كاملاً بنتائجه ورسومه المنفّذة
 ├── requirements.txt           ← حزم بايثون المطلوبة
 ├── LICENSE                    ← رخصة MIT
 ├── data/
