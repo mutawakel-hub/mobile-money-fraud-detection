@@ -167,8 +167,8 @@
 
 ### الطريقة الأسهل: دفتر Jupyter (موصى به)
 
-> **للمناقشة السريعة:** `mobile_money_fraud_simple.ipynb` نسخة مبسطة (24 خلية، 6 رسوم، شرح سهل + أسئلة مناقشة متوقعة بإجاباتها) تغطي كل متطلبات المشروع بنفس نتائج التقرير تماماً.
-> **النسخة الكاملة:** `mobile_money_fraud_detection.ipynb` (41 خلية، 10 رسوم، تحليل أعمق).
+> **دفتر المشروع الرئيسي:** `mobile_money_fraud_project.ipynb` — مسار المشروع كاملاً في 12 خلية (استكشاف، معالجة وهندسة، نمذجة، تقييم، خلاصة) بنتائجه ورسومه المنفّذة.
+> **دفتر التحليل الموسّع:** `mobile_money_fraud_detection.ipynb` (41 خلية، 10 رسوم، تحليلات إضافية: تحليل الإشارة وسقف الأداء، استنزاف الرصيد، منحنيات ROC).
 
 ```bash
 # 1) تثبيت المتطلبات
@@ -177,7 +177,7 @@ pip install -r requirements.txt jupyter
 # 2) تحميل البيانات إلى مجلد data/ (انظر data/README.md)
 
 # 3) فتح الدفتر وتنفيذ كل الخلايا (خلايا النتائج والرسوم منفّذة ومحفوظة فيه أصلاً)
-jupyter notebook mobile_money_fraud_detection.ipynb
+jupyter notebook mobile_money_fraud_project.ipynb
 ```
 
 ### أو تشغيل خط الإنتاج كسكربتات
@@ -204,8 +204,8 @@ python src/04_signal_analysis.py # تحليل سقف الأداء
 ```
 mobile-money-fraud-detection/
 ├── README.md                  ← هذا الملف
-├── mobile_money_fraud_detection.ipynb ← الدفتر الكامل: المشروع بكل تحليلاته (منفّذ)
-├── mobile_money_fraud_simple.ipynb ← النسخة المبسطة للمناقشة (منفّذة + أسئلة مناقشة)
+├── mobile_money_fraud_project.ipynb ← دفتر المشروع الرئيسي (12 خلية، منفّذ)
+├── mobile_money_fraud_detection.ipynb ← دفتر التحليل الموسّع (41 خلية، منفّذ)
 ├── requirements.txt           ← حزم بايثون المطلوبة
 ├── LICENSE                    ← رخصة MIT
 ├── data/
